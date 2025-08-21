@@ -3,224 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sivanvita Naidu G N - Portfolio</title>
+    <title>Han Nguyen - Portfolio</title>
     <style>
-        /* Global styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         
         body {
-            background-color: #f9f9f9;
+            background-color: #f5f5f5;
             color: #333;
-            line-height: 1.5;
+            line-height: 1.6;
+            padding: 20px;
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
         }
         
-        /* Header styles */
         .header {
             text-align: center;
             margin-bottom: 30px;
         }
         
-        h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 1px;
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
             margin-bottom: 5px;
         }
         
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        
         .social-links {
-            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 20px;
         }
         
-        .divider {
-            height: 1px;
-            background-color: #ccc;
-            margin: 25px 0;
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
         }
         
-        /* Section styles */
-        h2 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-        }
-        
-        .section {
+        .about {
             margin-bottom: 30px;
         }
         
-        /* List styles */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        li {
+        .about h2 {
+            font-size: 20px;
             margin-bottom: 10px;
-            padding-left: 15px;
-            text-indent: -15px;
         }
         
-        li:before {
-            content: "- ";
+        .about p {
+            margin-bottom: 10px;
         }
         
-        .two-column {
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .entry {
+            margin-bottom: 15px;
+        }
+        
+        .entry .year {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .entry .title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .entry .location {
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+        
+        .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
+            margin-top: 15px;
         }
         
-        .col {
-            flex: 1;
-            min-width: 250px;
+        .skill-pill {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
         }
         
-        .year {
-            font-weight: 500;
-        }
-        
-        .bold-list {
-            font-weight: 600;
-        }
-        
-        .tag-list {
-            display: flex;
-            flex-wrap: wrap;
+        .languages {
+            display: grid;
+            grid-template-columns: auto 1fr;
             gap: 10px;
             margin-top: 10px;
         }
         
-        .tag {
-            background-color: #eee;
-            padding: 5px 10px;
-            border-radius: 3px;
-            font-size: 14px;
+        .language-name {
+            font-weight: bold;
         }
         
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 15px;
-            }
-            
-            .two-column {
-                flex-direction: column;
-            }
+        .hobbies {
+            margin-top: 15px;
+        }
+        
+        .hobby-item {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>PORTFOLIO</h1>
+        <h2>TEO! I/O</h2>
         <div class="social-links">
-            <strong>EMAIL:</strong> sivanvitanaidugn@gmail.com |
-            <strong>PH:</strong> +919849472232 |
-            <strong>IN:</strong> linkedin.com/in/sivanvitanaidugn01062002
+            <span>BE: /hannnb</span>
+            <span>IG: @han.nnb</span>
+            <span>LL: /han-nnb</span>
         </div>
-        <div class="divider"></div>
     </div>
-
-    <div class="section">
-        <h2>Sivanvita Naidu G N</h2>
-        <p><strong>SOFTWARE ENGINEER</strong></p>
-        <p>Hello, I'm Sivanvita!</p>
-        <p>I am a passionate Software Engineer with experience in developing scalable solutions and modernizing legacy systems. I specialize in backend development and have expertise in multiple programming languages and database technologies.</p>
+    
+    <hr>
+    
+    <div class="about">
+        <h2>Hlan Nguyen</h2>
+        <p>Hello, I'm Han !</p>
+        <p>I am a self-taught Graphic Designer based in Viet Nam with extensive marketing and communication experience. I am currently living in France and pursuing a degree in Digital Web & Project Management.</p>
+        <p>Q: linkedin.com/in/han-nnb</p>
     </div>
-
-    <div class="divider"></div>
-
+    
+    <hr>
+    
     <div class="section">
         <h2>Education</h2>
-        <ul>
-            <li><span class="year">2019-2023</span> SASTRA Deemed to be University Thanjavur<br>
-                B.Tech in Computer Science Engineering</li>
-            <li><span class="year">2017-2019</span> Sri Chaitanya Junior College<br>
-                Intermediate Education</li>
-            <li><span class="year">2016-2017</span> Delhi Public School<br>
-                Secondary Education</li>
-        </ul>
+        <div class="entry">
+            <div class="year">2022-2023</div>
+            <div class="title">Digital Campus, Montpellier</div>
+            <div class="location">Digital Web & Project Management</div>
+        </div>
+        <div class="entry">
+            <div class="year">2021-2022</div>
+            <div class="title">IUT de Biztiers</div>
+            <div class="location">Commercialisation Technique</div>
+        </div>
+        <div class="entry">
+            <div class="year">2017-2020</div>
+            <div class="title">Economic University, Danaing</div>
+            <div class="location">International Business</div>
+        </div>
     </div>
-
-    <div class="divider"></div>
-
+    
+    <hr>
+    
     <div class="section">
         <h2>Experience</h2>
-        <ul>
-            <li><span class="year">2023-Present</span> Software Engineer<br>
-                NthPhase Software Solutions</li>
-            <li><span class="year">2023</span> Junior Software Engineer<br>
-                FORD GTBC (Project MARS)</li>
-            <li><span class="year">2023</span> Software Intern<br>
-                FORD GTBC (PDO Team)</li>
-        </ul>
-        
-        <div class="tag-list">
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">API Development</span>
+        <div class="entry">
+            <div class="year">2022</div>
+            <div class="title">Marketing Intern</div>
+            <div class="location">Retail mixes across the world</div>
+            <div class="location">Bi Eink, Rainborne, France</div>
         </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><span class="year">2023</span> Cardiovascular Disease Prediction Analysis<br>
-                Machine Learning project with 99% accuracy</li>
-            <li><span class="year">2022</span> E-Commerce Backend API<br>
-                Java-based unified codebase for eCommerce platform</li>
-        </ul>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="two-column">
-        <div class="col">
-            <div class="section">
-                <h2>Language</h2>
-                <ul>
-                    <li>English <span style="float: right;">Fluent</span></li>
-                    <li>Hindi <span style="float: right;">Fluent</span></li>
-                    <li>Tamil <span style="float: right;">Native</span></li>
-                </ul>
-            </div>
+        <div class="entry">
+            <div class="year">2021</div>
+            <div class="title">Freelancer</div>
+            <div class="location">Consulting with clients, created logos, posters, presentations based on their requirements</div>
+        </div>
+        <div class="entry">
+            <div class="year">2020</div>
+            <div class="title">Graphic Designer</div>
+            <div class="location">Designed promotional materials for events</div>
+            <div class="location">Scriptural database, Viet Nam</div>
         </div>
         
-        <div class="col">
-            <div class="section">
-                <h2>Hobbies & Interests</h2>
-                <ul>
-                    <li>Machine Learning</li>
-                    <li>API Development</li>
-                    <li>Database Systems</li>
-                    <li>Problem Solving</li>
-                    <li>Web Technologies</li>
-                </ul>
-            </div>
+        <div class="skills">
+            <div class="skill-pill">Economics</div>
+            <div class="skill-pill">Communication</div>
+            <div class="skill-pill">Digital-oriented</div>
+            <div class="skill-pill">Biologically</div>
         </div>
     </div>
-
-    <div class="divider"></div>
-
+    
+    <hr>
+    
     <div class="section">
-        <h2>Achievements</h2>
-        <ul>
-            <li>AWS Technical Essentials Certificate from Amazon</li>
-            <li>5-star gold rank in MySQL on HackerRank</li>
-        </ul>
+        <h2>Activities</h2>
+        <div class="entry">
+            <div class="year">2020</div>
+            <div class="title">"Danaing Tul" z exhibition</div>
+            <div class="location">Artist of miniature art</div>
+        </div>
+        <div class="entry">
+            <div class="year">2019</div>
+            <div class="title">Danaing Robodnic contest</div>
+            <div class="location">Veterans disagree and producer of promotional materials</div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="section">
+        <h2>Language</h2>
+        <div class="languages">
+            <div class="language-name">English</div>
+            <div>Fluent</div>
+            <div class="language-name">French</div>
+            <div>Intermediate</div>
+            <div class="language-name">Vietnamese</div>
+            <div>Native</div>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="section">
+        <h2>Holbies & Interests</h2>
+        <div class="hobbies">
+            <div class="hobby-item">Global Food/Organizer</div>
+            <div class="hobby-item">Grochet Writing</div>
+            <div class="hobby-item">Digital art, Miniature craft</div>
+            <div class="hobby-item">Cat cat and cat</div>
+        </div>
     </div>
 </body>
 </html>

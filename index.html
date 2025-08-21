@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sivanvita Naidu G N - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Base styles */
+        /* Global styles */
         * {
             margin: 0;
             padding: 0;
@@ -15,89 +14,48 @@
         }
         
         body {
-            background-color: #f5f5f5;
+            background-color: #f9f9f9;
             color: #333;
-            line-height: 1.6;
-            max-width: 1000px;
+            line-height: 1.5;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
         /* Header styles */
-        header {
+        .header {
             text-align: center;
             margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #ccc;
         }
         
         h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
         }
         
         .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 15px 0;
+            font-size: 14px;
+            margin-bottom: 20px;
         }
         
-        .social-links a {
-            color: #333;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .social-links a:hover {
-            color: #0066cc;
-        }
-        
-        /* Divider */
         .divider {
             height: 1px;
-            background: linear-gradient(to right, transparent, #999, transparent);
+            background-color: #ccc;
             margin: 25px 0;
-        }
-        
-        /* Two column layout */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-        
-        .left-column {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .right-column {
-            flex: 2;
-            min-width: 300px;
         }
         
         /* Section styles */
         h2 {
-            font-size: 1.5rem;
+            font-size: 18px;
+            font-weight: 600;
             margin-bottom: 15px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #333;
-            display: inline-block;
+            text-transform: uppercase;
         }
         
-        section {
-            margin-bottom: 40px;
-        }
-        
-        /* About section */
-        .about {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        .section {
+            margin-bottom: 30px;
         }
         
         /* List styles */
@@ -107,235 +65,162 @@
         }
         
         li {
-            margin-bottom: 12px;
-            padding-left: 20px;
-            position: relative;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            text-indent: -15px;
         }
         
         li:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #555;
-            font-weight: bold;
+            content: "- ";
         }
         
-        .timeline-item {
-            margin-bottom: 20px;
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .col {
+            flex: 1;
+            min-width: 250px;
         }
         
         .year {
-            font-weight: bold;
-            color: #0066cc;
+            font-weight: 500;
         }
         
-        .title {
+        .bold-list {
             font-weight: 600;
         }
         
-        .company {
-            font-style: italic;
-            color: #666;
-        }
-        
-        /* Skills section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .skill-category {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .skill-category h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            color: #0066cc;
-        }
-        
-        /* Interests section */
-        .interests {
+        .tag-list {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 10px;
         }
         
-        .interest {
+        .tag {
             background-color: #eee;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
         }
         
         /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
             }
             
-            h1 {
-                font-size: 2.2rem;
+            .two-column {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>PORTFOLIO</h1>
         <div class="social-links">
-            <a href="mailto:sivanvitanaidugn@gmail.com"><i class="fas fa-envelope"></i> sivanvitanaidugn@gmail.com</a>
-            <a href="tel:+919849472232"><i class="fas fa-phone"></i> +919849472232</a>
-            <a href="https://linkedin.com/in/sivanvitanaidugn01062002" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <strong>EMAIL:</strong> sivanvitanaidugn@gmail.com |
+            <strong>PH:</strong> +919849472232 |
+            <strong>IN:</strong> linkedin.com/in/sivanvitanaidugn01062002
         </div>
-    </header>
+        <div class="divider"></div>
+    </div>
 
-    <div class="container">
-        <div class="left-column">
-            <section class="about">
-                <h2>Sivanvita Naidu G N</h2>
-                <p><strong>SOFTWARE ENGINEER</strong></p>
-                <p>Hello, I'm Sivanvita!</p>
-                <p>I am a passionate Software Engineer with experience in developing scalable solutions and modernizing legacy systems. I specialize in backend development and have expertise in multiple programming languages and database technologies.</p>
-            </section>
+    <div class="section">
+        <h2>Sivanvita Naidu G N</h2>
+        <p><strong>SOFTWARE ENGINEER</strong></p>
+        <p>Hello, I'm Sivanvita!</p>
+        <p>I am a passionate Software Engineer with experience in developing scalable solutions and modernizing legacy systems. I specialize in backend development and have expertise in multiple programming languages and database technologies.</p>
+    </div>
 
-            <section class="skills">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <p>Python, C/C++, Java</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Database Technologies</h3>
-                        <p>MySQL, RDBMS, PostgreSQL</p>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Technical Skills</h3>
-                        <p>DSA, Git, Agile, SDLC, HTML, CSS, JavaScript, AI Techniques, Angular</p>
-                    </div>
-                </div>
-            </section>
+    <div class="divider"></div>
 
-            <section class="languages">
-                <h2>Languages</h2>
-                <ul>
-                    <li><strong>English</strong> - Fluent</li>
-                    <li><strong>Hindi</strong> - Fluent</li>
-                    <li><strong>Tamil</strong> - Native</li>
-                </ul>
-            </section>
+    <div class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><span class="year">2019-2023</span> SASTRA Deemed to be University Thanjavur<br>
+                B.Tech in Computer Science Engineering</li>
+            <li><span class="year">2017-2019</span> Sri Chaitanya Junior College<br>
+                Intermediate Education</li>
+            <li><span class="year">2016-2017</span> Delhi Public School<br>
+                Secondary Education</li>
+        </ul>
+    </div>
 
-            <section class="interests-section">
-                <h2>Interests</h2>
-                <div class="interests">
-                    <span class="interest">Machine Learning</span>
-                    <span class="interest">API Development</span>
-                    <span class="interest">Database Systems</span>
-                    <span class="interest">Problem Solving</span>
-                    <span class="interest">Web Technologies</span>
-                </div>
-            </section>
-        </div>
+    <div class="divider"></div>
 
-        <div class="right-column">
-            <section class="experience">
-                <h2>Experience</h2>
-                
-                <div class="timeline-item">
-                    <p class="year">2023 - Present</p>
-                    <p class="title">Software Engineer</p>
-                    <p class="company">NthPhase Software Solutions</p>
-                    <ul>
-                        <li>Architected a scalable ERP solution integrating HR, marketing, and fleet management modules using Apache OFBiz</li>
-                        <li>Delivered fleet management module in 14 days vs. 25-day target, resulting in 30% cost savings</li>
-                        <li>Earned "Excellence in Delivery" award for outstanding performance</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <p class="year">2023</p>
-                    <p class="title">Junior Software Engineer (Project MARS)</p>
-                    <p class="company">FORD GTBC</p>
-                    <ul>
-                        <li>Worked on transition of legacy front-end technologies to modern frameworks</li>
-                        <li>Designed and developed backend APIs using Java and PostgreSQL</li>
-                    </ul>
-                </div>
-                
-                <div class="timeline-item">
-                    <p class="year">2023</p>
-                    <p class="title">Software Intern (PDO Team)</p>
-                    <p class="company">FORD GTBC</p>
-                    <ul>
-                        <li>Developed an API with strong security features including authentication and authorization</li>
-                        <li>Conducted Sanity testing across webpage modules for six regions</li>
-                    </ul>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <section class="education">
-                <h2>Education</h2>
-                
-                <div class="timeline-item">
-                    <p class="year">2019 - 2023</p>
-                    <p class="title">B.Tech in Computer Science Engineering</p>
-                    <p class="company">SASTRA Deemed to be University Thanjavur</p>
-                    <p>CGPA: 7.86/10</p>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <section class="projects">
-                <h2>Projects</h2>
-                
-                <div class="timeline-item">
-                    <p class="title">Cardiovascular Disease Prediction Analysis using Machine Learning</p>
-                    <ul>
-                        <li>Collected and organized 2.1k data entries from three datasets</li>
-                        <li>Applied Machine Learning techniques via a 2-step approach</li>
-                        <li>Achieved 99% accuracy in binary classification using an ensemble of KNN and Logistic Regression</li>
-                    </ul>
-                </div>
-            </section>
-
-            <div class="divider"></div>
-
-            <section class="achievements">
-                <h2>Achievements</h2>
-                <ul>
-                    <li>AWS Technical Essentials Certificate from Amazon</li>
-                    <li>5-star gold rank in MySQL on HackerRank</li>
-                </ul>
-            </section>
+    <div class="section">
+        <h2>Experience</h2>
+        <ul>
+            <li><span class="year">2023-Present</span> Software Engineer<br>
+                NthPhase Software Solutions</li>
+            <li><span class="year">2023</span> Junior Software Engineer<br>
+                FORD GTBC (Project MARS)</li>
+            <li><span class="year">2023</span> Software Intern<br>
+                FORD GTBC (PDO Team)</li>
+        </ul>
+        
+        <div class="tag-list">
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">API Development</span>
         </div>
     </div>
 
-    <script>
-        // Simple animation for page elements
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.timeline-item, .skill-category');
-            
-            items.forEach((item, index) => {
-                item.style.opacity = "0";
-                item.style.transform = "translateY(20px)";
-                item.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-                
-                setTimeout(() => {
-                    item.style.opacity = "1";
-                    item.style.transform = "translateY(0)";
-                }, 100 + (index * 100));
-            });
-        });
-    </script>
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li><span class="year">2023</span> Cardiovascular Disease Prediction Analysis<br>
+                Machine Learning project with 99% accuracy</li>
+            <li><span class="year">2022</span> E-Commerce Backend API<br>
+                Java-based unified codebase for eCommerce platform</li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="two-column">
+        <div class="col">
+            <div class="section">
+                <h2>Language</h2>
+                <ul>
+                    <li>English <span style="float: right;">Fluent</span></li>
+                    <li>Hindi <span style="float: right;">Fluent</span></li>
+                    <li>Tamil <span style="float: right;">Native</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="section">
+                <h2>Hobbies & Interests</h2>
+                <ul>
+                    <li>Machine Learning</li>
+                    <li>API Development</li>
+                    <li>Database Systems</li>
+                    <li>Problem Solving</li>
+                    <li>Web Technologies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>AWS Technical Essentials Certificate from Amazon</li>
+            <li>5-star gold rank in MySQL on HackerRank</li>
+        </ul>
+    </div>
 </body>
 </html>

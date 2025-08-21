@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivanvita Naidu G N - Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3 {
+            margin-bottom: 15px;
+            color: #222;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            border-left: 4px solid #333;
+            padding-left: 10px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #555;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px dotted #777;
+            padding-bottom: 2px;
+        }
+        
+        .contact-info a:hover {
+            color: #0066cc;
+            border-bottom: 1px solid #0066cc;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .col {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .tag {
+            background-color: #eee;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+        
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .two-column {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PORTFOLIO</h1>
+        <div class="contact-info">
+            <span>📧 sivanvitanaidugn@gmail.com</span>
+            <span>📱 +919849472232</span>
+            <a href="https://linkedin.com/in/sivanvitanaidugn01062002" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sivanvita Naidu G N</h2>
+            <p><strong>SOFTWARE ENGINEER</strong></p>
+            <p>Hello, I'm Sivanvita!</p>
+            <p>I am a passionate Software Engineer with experience in developing scalable solutions and modernizing legacy systems. I specialize in backend development and have expertise in multiple programming languages and database technologies.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <h3>NthPhase Software Solutions</h3>
+            <p><strong>Software Engineer</strong></p>
+            <ul>
+                <li>Architected a scalable ERP solution integrating HR, marketing, and fleet management modules using Apache OFBiz, serving 50+ users across internal and external stakeholders.</li>
+                <li>Delivered fleet management module in 14 days vs. 25-day target. Streamlined core processes, resulting in 30% cost savings. Earned "Excellence in Delivery" award.</li>
+                <li>Leading 1-month functional study across HR, Marketing, and Manufacturing verticals. Analyzing 100+ use cases to optimize product development and testing coverage, with focus on API behavior and data flow.</li>
+            </ul>
+            
+            <h3>FORD GTBC</h3>
+            <p><strong>Junior Software Engineer (Project MARS)</strong></p>
+            <ul>
+                <li>Worked on transition of legacy front-end technologies to modern frameworks, focused on decoupling front-end and back-end systems for improved flexibility and scalability.</li>
+                <li>Designed and developed <span class="highlight">backend APIs</span> using Java and PostgreSQL to enable the creation of a unified codebase for the eCommerce platform.</li>
+            </ul>
+            
+            <p><strong>Software Intern (PDO Team)</strong> - Jan 2023 – July 2023</p>
+            <ul>
+                <li>Developed an API as part of a specified task, implementing core system functionality, and received commendation for enhancing it with strong security features, including authentication and authorization, to ensure secure access to the platform.</li>
+                <li>Conducted Sanity testing across webpage modules for six regions, ensuring functionality, performance, and compatibility, and collaborated with teams to resolve issues for region-specific user experiences.</li>
+            </ul>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>SASTRA Deemed to be University Thanjavur</strong> (2019-2023)</p>
+            <p>Bachelors in Technology – Computer Science Engineering</p>
+            <p>CGPA of 7.86 on 10</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Cardiovascular Disease Prediction Analysis using Machine Learning Techniques</strong></p>
+            <ul>
+                <li>Collected and organized 2.1k data entries from three datasets, one primary and two supplementary—to predict cardiovascular disease, enhancing model accuracy and reliability.</li>
+                <li>Normalized the data to prepare it for training and testing.</li>
+                <li>Applied Machine Learning techniques via a 2-step approach: first, applied classifiers separately, then combined them in an ensemble.</li>
+                <li>Achieved 99% accuracy in binary classification (0/1) using an ensemble of KNN and Logistic Regression.</li>
+            </ul>
+        </section>
+
+        <div class="divider"></div>
+
+        <div class="two-column">
+            <div class="col">
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <p><strong>Programming Languages:</strong></p>
+                    <p>Python, C/C++, Java</p>
+                    
+                    <p><strong>Database Technologies:</strong></p>
+                    <p>MySQL, RDBMS, PostgreSQL</p>
+                    
+                    <p><strong>Technical skills:</strong></p>
+                    <p>DSA, Git, Agile Principles, SDLC, HTML & CSS, JavaScript, AI Techniques, Angular</p>
+                </section>
+            </div>
+            
+            <div class="col">
+                <section id="achievements">
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>AWS Technical Essentials Certificate from Amazon</li>
+                        <li>5-star gold rank in MySQL on HackerRank</li>
+                    </ul>
+                </section>
+                
+                <section id="interests">
+                    <h2>Interests</h2>
+                    <div class="tag-list">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">API Development</span>
+                        <span class="tag">Database Systems</span>
+                        <span class="tag">Problem Solving</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="divider"></div>
+        <p style="text-align: center; margin-top: 30px; color: #777;">
+            &copy; 2023 Sivanvita Naidu G N | Portfolio
+        </p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add subtle animation to section headers
+            const headers = document.querySelectorAll('h2');
+            headers.forEach(header => {
+                header.addEventListener('mouseover', () => {
+                    header.style.transition = 'color 0.3s ease';
+                    header.style.color = '#0066cc';
+                });
+                
+                header.addEventListener('mouseout', () => {
+                    header.style.color = '#222';
+                });
+            });
+            
+            // Make contact links more noticeable on hover
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('mouseover', () => {
+                    link.style.transition = 'all 0.3s ease';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
